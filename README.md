@@ -10,7 +10,7 @@ But :
   
 ## Prérequis
 
-Connaissance de [Typescript](https://www.typescriptlang.org/).
+Connaissances de [Typescript](https://www.typescriptlang.org/).
 
 Chaque exemple requiert d'abord l'import de Lodash avec NodeJS:
 
