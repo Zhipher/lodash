@@ -11,7 +11,13 @@ But :
 Chaque exemple requiert d'abord l'import de Lodash :
 
 ```js
-const _ = require("lodash");
+const _ = require('lodash');
+```
+
+ou
+
+```js
+import _ from 'lodash'
 ```
 
 ## Quelques fonctions
