@@ -58,7 +58,7 @@ Supprimer un élément du tableau facilement
 ```js
 const greetings = ['hello', 'hi', 'hey', 'wave', 'hi']
 _.pull(greetings, 'wave', 'hi')
-console.log(greetings)
+...
 // [ 'hello', 'hey' ]
 ```
 
@@ -67,8 +67,8 @@ Supprimer plusieurs éléments d'un tableau facilement
 ```js
 ...
 _.pullAll(greetings, ['wave', 'hi'])
-// [ 'hello', 'hey' ]
 ...
+// [ 'hello', 'hey' ]
 ```
 
 Assigne une ou plusieurs propriétés d’un objet à un objet source
