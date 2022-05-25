@@ -1,11 +1,17 @@
 # Lodash
 
-But : 
-- Itérer arrays, objects, & strings
-- Manipuler & testing values
+## Introduction
+
+But :
+
+- Itérer les tableaux, les objets, & les chaînes
+- Manipuler & tester les valeurs
 - Créer des fonctions composites
 
+## Quelques fonctions
+
 Récupérer un élément d'un tableau à une position
+
 ```js
 const _ = require("lodash");
 
