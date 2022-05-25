@@ -25,7 +25,6 @@ import _ from 'lodash'
 Récupérer un élément d'un tableau à une position :
 
 ```js
-...
 let nums: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
 
 console.log(_.nth(nums, 3)); // 4
@@ -35,7 +34,6 @@ console.log(_.nth(nums, -3)); // 6
 Supprimer les doublons sans tri :
 
 ```js
-...
 const userIds: number[] = [12, 13, 14, 12, 5, 34, 11, 12];
 
 const uniqueUserIds: number[] = _.uniq(userIds);
@@ -46,7 +44,6 @@ console.log(uniqueUserIds);
 Supprimer les doublons avec tri :
 
 ```js
-...
 const uniqueUserIds: number[] = _.uniqBy(userIds);
 console.log(uniqueUserIds);
 // [ 12, 13, 14, 5, 34, 11 ]
@@ -54,7 +51,6 @@ console.log(uniqueUserIds);
 Supprimer un élément du tableau facilement
 
 ```js
-...
 const greetings = ['hello', 'hi', 'hey', 'wave', 'hi']
 _.pull(greetings, 'wave', 'hi')
 console.log(greetings)
@@ -73,7 +69,6 @@ _.pullAll(greetings, ['wave', 'hi'])
 Assigne une ou plusieurs propriétés d’un objet à un objet source
 
 ```js
-...
 const foo: Foo = { a: "a property" };
 const bar: Bar = { b: 4, c: "an other property" }
 const result: Result = _.assign({ a: "an old property" }, foo, bar);
