@@ -73,5 +73,9 @@ Assigne une ou plusieurs propriétés d’un objet à un objet source
 const foo: Foo = { a: "a property" };
 const bar: Bar = { b: 4, c: "an other property" }
 const result: Result = _.assign({ a: "an old property" }, foo, bar);
-// result => { a: 'a property', b: 4, c: 'an other property' }
+// result => { 
+//      a: 'a property', 
+//      b: 4, 
+//      c: 'an other property' 
+// }
 ```
