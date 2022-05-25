@@ -8,6 +8,8 @@ But :
 - Manipuler & tester les valeurs
 - Créer des fonctions composites
   
+## Prérequis
+
 Chaque exemple requiert d'abord l'import de Lodash avec NodeJS:
 
 ```js
