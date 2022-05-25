@@ -25,6 +25,7 @@ import _ from 'lodash'
 Récupérer un élément d'un tableau à une position :
 
 ```js
+...
 let nums: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
 
 console.log(_.nth(nums, 3)); // 4
@@ -34,6 +35,7 @@ console.log(_.nth(nums, -3)); // 6
 Supprimer les doublons sans tri :
 
 ```js
+...
 const userIds: number[] = [12, 13, 14, 12, 5, 34, 11, 12];
 
 const uniqueUserIds: number[] = _.uniq(userIds);
@@ -44,6 +46,7 @@ console.log(uniqueUserIds);
 Supprimer les doublons avec tri :
 
 ```js
+...
 const uniqueUserIds: number[] = _.uniqBy(userIds);
 console.log(uniqueUserIds);
 // [ 12, 13, 14, 5, 34, 11 ]
@@ -51,6 +54,7 @@ console.log(uniqueUserIds);
 Supprimer un élément du tableau facilement
 
 ```js
+...
 const greetings = ['hello', 'hi', 'hey', 'wave', 'hi']
 _.pull(greetings, 'wave', 'hi')
 console.log(greetings)
