@@ -50,7 +50,7 @@ Supprimer les doublons avec tri :
 ```js
 ...
 const uniqueUserIds: number[] = _.uniqBy(userIds);
-console.log(uniqueUserIds);
+...
 // [ 12, 13, 14, 5, 34, 11 ]
 ```
 Supprimer un élément du tableau facilement
