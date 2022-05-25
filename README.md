@@ -2,18 +2,17 @@
 
 ## Introduction
 
-Chaque exemple requiert d'abord
-
-```js
-const _ = require("lodash");
-```
-
 But :
 
 - Itérer les tableaux, les objets, & les chaînes
 - Manipuler & tester les valeurs
 - Créer des fonctions composites
+  
+Chaque exemple requiert d'abord
 
+```js
+const _ = require("lodash");
+```
 ## Quelques fonctions
 
 Récupérer un élément d'un tableau à une position
