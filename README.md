@@ -80,3 +80,36 @@ result => {
 } 
 */
 ```
+
+Suppression des doublons d'un tableau
+
+```js
+const userIds = [12, 13, 14, 12, 5, 34, 11, 12]
+const uniqueUserIds = _.uniq(userIds)
+
+console.log(uniqueUserIds)
+// [ 12, 13, 14, 5, 34, 11 ]
+```
+
+
+Suppression des doublons d'un tableau avec tri
+
+```js
+const users = [
+  { id: 10, name: 'Phil', age: 32 },
+  { id: 8, name: 'Jason', age: 44 },
+  { id: 11, name: 'Rye', age: 28 },
+  { id: 10, name: 'Phil', age: 32 }
+]
+
+const uniqueUserIds = _.uniqBy(userIds)
+console.log(uniqueUsers)
+/*
+[
+  { id: 10, name: 'Phil', age: 32 },
+  { id: 8, name: 'Jason', age: 44 },
+  { id: 11, name: 'Rye', age: 28 }
+]
+*/
+
+```
