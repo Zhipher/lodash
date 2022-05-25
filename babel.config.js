@@ -9,8 +9,12 @@ module.exports = {
         targets: {
           node: 'current'
         }
-      },
+      }
 
     ]
-  ]
+  ],
+  "transform": {
+    "\\.[jt]s?$": "babel-jest",
+  },
+  "targets": "> 0.25%, not dead"
 }
