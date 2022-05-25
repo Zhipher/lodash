@@ -27,10 +27,8 @@ Récupérer un élément d'un tableau à une position :
 ```js
 let nums: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
 
-console.log(_.nth(nums, 3));
-// 4
-console.log(_.nth(nums, -3));
-// 6
+console.log(_.nth(nums, 3)); // 4
+console.log(_.nth(nums, -3)); // 6
 ```
 
 Supprimer les doublons sans tri :
