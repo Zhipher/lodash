@@ -61,7 +61,17 @@ Supprimer plusieurs éléments d'un tableau facilement
 
 ```js
 ...
-_.pullAll(greetings2, ['wave', 'hi'])
+_.pullAll(greetings, ['wave', 'hi'])
 // [ 'hello', 'hey' ]
 ...
+```
+
+// Assigne une ou plusieurs propriétés d’un objet à un objet source
+
+```js
+...
+const foo: Foo = { a: "a property" };
+const bar: Bar = { b: 4, c: "an other property" }
+const result: Result = _.assign({ a: "an old property" }, foo, bar);
+// result => { a: 'a property', b: 4, c: 'an other property' }
 ```
