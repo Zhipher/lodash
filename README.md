@@ -48,3 +48,20 @@ const uniqueUserIds: number[] = _.uniqBy(userIds);
 console.log(uniqueUserIds);
 // [ 12, 13, 14, 5, 34, 11 ]
 ```
+Supprimer un élément du tableau facilement
+
+```js
+const greetings = ['hello', 'hi', 'hey', 'wave', 'hi']
+_.pull(greetings, 'wave', 'hi')
+console.log(greetings)
+// [ 'hello', 'hey' ]
+```
+
+Supprimer plusieurs éléments d'un tableau facilement
+
+```js
+...
+_.pullAll(greetings2, ['wave', 'hi'])
+// [ 'hello', 'hey' ]
+...
+```
