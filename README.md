@@ -66,7 +66,7 @@ _.pullAll(greetings, ['wave', 'hi'])
 ...
 ```
 
-// Assigne une ou plusieurs propriétés d’un objet à un objet source
+Assigne une ou plusieurs propriétés d’un objet à un objet source
 
 ```js
 ...
