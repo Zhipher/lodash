@@ -13,8 +13,8 @@ module.exports = {
 
     ]
   ],
-  "transform": {
-    "\\.[jt]s?$": "babel-jest",
+  transform: {
+    '\\.[jt]s?$': 'babel-jest'
   },
-  "targets": "> 0.25%, not dead"
+  targets: '> 0.25%, not dead'
 }
