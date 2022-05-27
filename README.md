@@ -131,3 +131,11 @@ const p = {
 const res1 = _.findKey(p);        // returns "name"
 const res2 = _.findLastKey(p);    // returns "location"
 ```
+
+Vérifier si le string commence par un caractère donné
+
+```js
+const res = _.startsWith('abc', a) // => true
+const res = _.startsWith('abc', b) // => false
+const res = _.startsWith('abc', b, 1) // => true
+```
