@@ -119,7 +119,7 @@ console.log(uniqueUsers)
 
 ```
 
-Trouver la clé ans un objet
+Trouver la clé dans un objet
 
 ```js
 const p = {
