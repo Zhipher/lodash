@@ -118,3 +118,16 @@ console.log(uniqueUsers)
 */
 
 ```
+
+Trouver la clé ans un objet
+
+```js
+const p = {
+    name: "Peter Pan",
+    age: "Not yet a grownup",
+    location: "Neverland"
+};
+
+const res1 = _.findKey(p);        // returns "name"
+const res2 = _.findLastKey(p);    // returns "location"
+```
