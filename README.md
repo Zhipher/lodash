@@ -136,6 +136,6 @@ Vérifier si le string commence par un caractère donné
 
 ```js
 const res = _.startsWith('abc', a) // => true
-const res = _.startsWith('abc', b) // => false
-const res = _.startsWith('abc', b, 1) // => true
+const res2 = _.startsWith('abc', b) // => false
+const res3 = _.startsWith('abc', b, 1) // => true
 ```
