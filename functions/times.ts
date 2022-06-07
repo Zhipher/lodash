@@ -3,7 +3,7 @@
 import _ from 'lodash'
 
 _.times(42, () => {
-    console.log('execution')
+  console.log('execution')
 })
 
 console.log(_.times(4))
