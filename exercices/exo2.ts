@@ -1,22 +1,19 @@
 // 
 // Filtrer par enfants qui savent nager ou danser, et trier par sexe et age
 // 
-// TODO
+// A modifier suite aux modifs de type
 // 
 
 import orderBy from 'lodash/orderBy'
 import filter from 'lodash/filter'
 
-import { adults, children, IPerson } from './persons'
+import { adults, children, IChildren, IPerson } from './persons'
 
-const childrenSorted = filter(children, ({ skills }) => {
+const childrenSorted: Array<IChildren> = filter(children, (child) => {
+    const { skills } = child.childName
     return skills.includes('swim') || skills.includes('dance')
 })
 
-const childrenFiltered = orderBy( childrenSorted, [ 'gender', 'age'], [ 'asc', 'asc'])
-
+const childrenFiltered: Array<IChildren> = orderBy( childrenSorted, [ 'gender', 'age'], [ 'asc', 'asc'])
 
 console.log(childrenFiltered)
-// voir avec some
-
-// console.log(childrenSwimOrDance)
