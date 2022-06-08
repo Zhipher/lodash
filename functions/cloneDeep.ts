@@ -1,6 +1,8 @@
+// 
 // Cloner un objet
+// 
 
-import _ from 'lodash'
+import cloneDeep from 'lodash/cloneDeep'
 // import Object from '../interfaces/cloneDeep'
 
 export const object1 = {
@@ -10,6 +12,6 @@ export const object1 = {
   city: 'Rennes'
 }
 
-export const object2 = _.cloneDeep(object1)
+export const object2 = cloneDeep(object1)
 
 export default { object1, object2 }

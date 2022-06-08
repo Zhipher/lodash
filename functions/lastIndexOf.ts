@@ -1,4 +1,6 @@
+// 
 // Balayer un tableau dans le sens inverse
+// 
 
 import lastIndexOf from 'lodash/lastIndexOf'
 

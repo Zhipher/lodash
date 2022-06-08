@@ -1,8 +1,8 @@
 // 
-// Tri un tableau d'objet selon le critère choisi en paramètres 2, 3'
+// Tri un tableau d'objet selon le/les critère(s) choisi(s) en paramètres
 // 
 
-import _ from 'lodash'
+import orderBy from 'lodash/orderBy'
 
 const users = [
     { user: 'fred', age: 40, active: false },
@@ -11,7 +11,7 @@ const users = [
     { user: 'pebbles', age: 1, active: true },
 ]
 
-let actives = _.orderBy(users, [ 'user', 'age' ], [ 'asc', 'desc' ])
+let actives = orderBy(users, [ 'user', 'age' ], [ 'asc', 'desc' ])
 // actives => [
 //     { user: 'barney', age: 36, active: true },
 //     { user: 'fred', age: 40, active: false },

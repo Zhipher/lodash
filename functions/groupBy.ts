@@ -2,7 +2,7 @@
 // 
 // 
 
-import _ from 'lodash'
+import groupBy from 'lodash/groupBy'
 
 const users = [
     { user: 'fred', age: 40, active: false },
@@ -10,10 +10,8 @@ const users = [
     { user: 'pebbles', age: 1, active: true },
 ]
 
-const userGrouped = _.groupBy(users, (user) => {
+const userGrouped = groupBy(users, (user) => {
     return user.user.substr(0, 1)
 })
-
-
 
 console.log(userGrouped)

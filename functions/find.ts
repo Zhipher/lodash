@@ -2,7 +2,7 @@
 // Retourne le premier élément correspondant sous forme d'élément'
 // 
 
-import _ from 'lodash'
+import find from 'lodash/find'
 
 const users = [
     { user: 'fred', age: 40, active: false },
@@ -10,7 +10,7 @@ const users = [
     { user: 'pebbles', age: 1, active: true },
 ]
 
-const actives = _.find(users, { active: false })
+const actives = find(users, { active: false })
 // actives => { user: 'fred', age: 40, active }
 
 console.log(actives)

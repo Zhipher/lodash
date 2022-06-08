@@ -1,3 +1,9 @@
+// 
+// Aplatir le tableau d'un seul niveau de profondeur
+// 
+
+import flatten from 'lodash/flatten'
+
 const orderData = {
   internal: [
     { userId: 1, date: '2021-09-09', amount: 230.0, type: 'prepaid' },
@@ -17,5 +23,5 @@ for (const [orderType, orders] of Object.entries(orderData)) {
 }
 console.log(postpaidUserIds)
 
-const flatUserIds = _.flatten(postpaidUserIds)
+const flatUserIds = flatten(postpaidUserIds)
 console.log(flatUserIds)

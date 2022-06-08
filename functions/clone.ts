@@ -2,7 +2,7 @@
 // Cloner un objet
 // 
 
-import _ from 'lodash'
+import clone from 'lodash/clone'
 
 interface IUser {
     user: string,
@@ -17,7 +17,7 @@ const users: Array<IUser> = [
 ]
 
 const user: IUser = users[0]
-const user2: IUser = _.clone(user)
+const user2: IUser = clone(user)
 
 user2.age = user2.age * 3
 

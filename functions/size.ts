@@ -2,7 +2,7 @@
 // Savoir la taille d'un objet
 // 
 
-import _ from 'lodash'
+import size from 'lodash/size'
 
 const users = [
     { user: 'fred', age: 40, active: false },
@@ -16,7 +16,7 @@ const user = users[0]
 const objectSize2 = Object.keys(user).length
 
 // With Lodash
-const objectSize = _.size(user)
+const objectSize = size(user)
 
 
 console.log(objectSize)

@@ -2,11 +2,11 @@
 // Transforme une chaîne donnée en url conventionnelle
 // 
 
-import _ from 'lodash'
+import kebabCase from 'lodash/kebabCase'
 
 let demo = 'Je suis une URL intéressante'
 
-demo = _.kebabCase(demo)
+demo = kebabCase(demo)
 
 console.log(demo)
 

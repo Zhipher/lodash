@@ -2,7 +2,8 @@
 // Choisir de façon aléatoire un élément du tableau
 // 
 
-import _ from 'lodash'
+import sample from 'lodash/sample'
+import sampleSize from 'lodash/sampleSize'
 
 const users = [
     { user: 'fred', age: 40, active: false },
@@ -11,16 +12,16 @@ const users = [
 ]
 
 Array(10).map( () => {
-    const userAleatoireChoisi = _.sample(users)
+    const userAleatoireChoisi = sample(users)
     console.log(userAleatoireChoisi)
 })
 
-const userAleaChoiced = _.sample(users)
+const userAleaChoiced = sample(users)
 // par exemple : { user: 'fred', age: 40, active: false }
 
 console.log(userAleaChoiced)
 
-const twoUsersChoiced = _.sampleSize(users, 2)
+const twoUsersChoiced = sampleSize(users, 2)
 // par exemple : [
 //     { user: 'pebbles', age: 1, active: true },
 //     { user: 'fred', age: 40, active: false }

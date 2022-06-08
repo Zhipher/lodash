@@ -1,14 +1,20 @@
-// vérification de la valeur de réponse
+// 
+// Obtenir la valeur au chemin de l'objet. Si la valeur résolue n'est pas définie, defaultValue est renvoyée à sa place.
+// _.get(object, path, [defaultValue])
+// 
 
-import _ from 'lodash'
 
-const apiResponse = {
-  id: 33467,
-  paymentRefernce: 'AEE3356T68',
-  // `order` object missing
-  processedAt: '2021-10-10 00:00:00'
-}
+import get from 'lodash/get'
 
-const zipCode = _.get(apiResponse, 'order.payee.address.zipCode')
-console.log('The order was sent to the zip code: ' + zipCode)
-// The order was sent to the zip code: undefined
+const object = { 'a': [{ 'b': { 'c': 3 } }] };
+ 
+const res = get(object, 'a[0].b.c');
+// => 3
+ 
+const res2 = get(object, ['a', '0', 'b', 'c']);
+// => 3
+ 
+const res3 = get(object, 'a.b.c', 'default');
+// => 'default'
+
+console.log(res, res2, res3)

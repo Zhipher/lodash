@@ -1,5 +1,4 @@
 import filter from 'lodash/filter'
-import some from 'lodash/some'
 
 interface IPerson {
 	firstName: string,

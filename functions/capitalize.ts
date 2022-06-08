@@ -1,9 +1,9 @@
-import _ from 'lodash'
+import capitalize from 'lodash/capitalize'
 
 let demo = 'olivier mayeur'
 
 // Mettre en majuscule le premier caractère
-demo = _.capitalize(demo)
+demo = capitalize(demo)
 
 console.log(demo)
 // demo => Olivier mayeur

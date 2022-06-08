@@ -2,11 +2,11 @@
 // Remplacer les espaces par des underscores
 // 
 
-import _ from 'lodash'
+import snakeCase from 'lodash/snakeCase'
 
 let demo = 'olivier mayeur'
 
-demo = _.snakeCase(demo)
+demo = snakeCase(demo)
 
 console.log(demo)
 

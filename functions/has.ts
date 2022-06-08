@@ -1,4 +1,8 @@
-import _ from 'lodash'
+// 
+// Vérifier si le chemin est une propriété directe de l'objet
+// 
+
+import has from 'lodash/has'
 
 interface IUser {
     user: { firstname: string },
@@ -8,7 +12,7 @@ interface IUser {
 
 const user: IUser = { user: { firstname: 'demo' }, active: true, age: 22 }
 
-if( _.has(user, 'user.firstname') && user.user.firstname === 'demo' ) {
+if( has(user, 'user.firstname') && user.user.firstname === 'demo' ) {
     console.log('ok')
 } 
 

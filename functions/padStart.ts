@@ -1,9 +1,13 @@
-import _ from 'lodash'
+// 
+// Ajouter quelque chose avant la chaîne
+// 
+
+import padStart from 'lodash/padStart'
 
 let demo = '1'
 
 // Rajoute le nombre de 0 avant
-demo = _.padStart(demo, 6, '0')
+demo = padStart(demo, 6, '0')
 console.log(demo)
 // demo => 000001
 

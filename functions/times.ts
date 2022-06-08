@@ -1,9 +1,11 @@
+// 
 // exécuter un fonction n fois
+// 
 
-import _ from 'lodash'
+import times from 'lodash/times'
 
-_.times(42, () => {
+times(42, () => {
   console.log('execution')
 })
 
-console.log(_.times(4))
+console.log(times(4))
