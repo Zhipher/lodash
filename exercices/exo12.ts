@@ -1,5 +1,5 @@
 // 
-// Exécuter une fonction une seule fois
+// Tableau de tous les enfants
 // 
 
 import times from 'lodash/times'
