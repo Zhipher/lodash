@@ -3,8 +3,6 @@
 // 
 
 import map from 'lodash/map'
-import flatten from 'lodash/flatten'
-import uniq from 'lodash/uniq'
 
 import { children } from './persons'
 
