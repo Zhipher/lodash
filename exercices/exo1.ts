@@ -1,5 +1,9 @@
+// 
+// Filtrer par âge inférieur à 30 ans et possède les compétences « courir » et « nager »
+// 
+
 import filter from 'lodash/filter'
-import adults from './adults'
+import { adults } from './persons'
 
 const ageUnderThirtyandRunSwim = filter(adults, (adult) => {
     // Avec fonctions JS
