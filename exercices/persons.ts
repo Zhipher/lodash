@@ -70,7 +70,7 @@ export const adults: Array<IAdult> = [
         firstname: 'Grégoire', 
         lastname: 'Farotale', 
         age: 54, 
-        skills: ['run', 'jump', 'swim', 'dance'], 
+        skills: ['jump', 'swim', 'dance'], 
         gender: 'male', 
         married: true, 
         children: addChildren('Farotale')  
