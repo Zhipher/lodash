@@ -1,5 +1,5 @@
 // 
-// Tri un tableau d'objet selon le/les critère(s) choisi(s) en paramètres
+// Trier un tableau d'objet selon le/les critère(s) choisi(s) en paramètres
 // 
 
 import orderBy from 'lodash/orderBy'

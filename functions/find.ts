@@ -2,6 +2,8 @@
 // Retourne le premier élément correspondant sous forme d'élément'
 // 
 
+// Une autre manière mais pour renvoyer un tableau => voir filter
+
 import find from 'lodash/find'
 
 const users = [

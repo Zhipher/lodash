@@ -2,6 +2,8 @@
 // Retourne les éléments correspondants sous forme de tableau
 // 
 
+// Une autre manière mais pour renvoyer un objet => voir find
+
 import filter from 'lodash/filter'
 
 const tab = [ 1, 2, 3]
