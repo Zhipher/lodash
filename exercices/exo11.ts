@@ -2,12 +2,10 @@
 // Tableau de tous les enfants
 // 
 
-import map from 'lodash/map'
-import flatten from 'lodash/flatten'
-import uniq from 'lodash/uniq'
+import times from 'lodash/times'
 
-import { children } from './persons'
+const doSomething = () => {
+    console.log('Une execution une seule fois')
+}
 
-const ages = map(children, ({ childName }) => childName.age)
-
-console.log(ages)
+times(1, doSomething)
