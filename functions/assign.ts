@@ -4,22 +4,22 @@
 
 import assign from 'lodash/assign'
 
-interface Foo {
+interface IFoo {
     a: string;
 }
 
-interface Bar {
+interface IBar {
     b: number;
     c: string;
 }
 
-interface Result {
+interface IResult {
     a: string;
     b: number;
     c: string;
 }
 
-export const foo: Foo = { a: "a property" };
-export const bar: Bar = { b: 4, c: "an other property" }
-export const result: Result = assign({ a: "an old property" }, foo, bar);
+export const foo: IFoo = { a: "a property" };
+export const bar: IBar = { b: 4, c: "an other property" }
+export const result: IResult = assign({ a: "an old property" }, foo, bar);
 // result => { a: 'a property', b: 4, c: 'an other property' }
