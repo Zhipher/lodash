@@ -1,5 +1,8 @@
 import filter from 'lodash/filter'
 
+const addChildren = (lastname: string) => 
+    filter(children, (c) => c.childName.lastname === lastname ) 
+
 export interface IPerson {
 	firstname: string,
 	lastname: string,
@@ -34,7 +37,13 @@ export const children: Array<IChildren> = [
         childName: { firstname: 'Régine', lastname: 'Marino', age: 6, skills: ['dance'], gender: 'female', married: false }
     },
     {
-        childName: { firstname: 'Julia', lastname: 'Lolilo', age: 40, skills: ['run', 'dance'], gender: 'female', married: true }
+        childName: { firstname: 'Clémentine', lastname: 'Lolilo', age: 40, skills: ['run', 'dance'], gender: 'female', married: true }
+    },
+    {
+        childName: { firstname: 'Adeline', lastname: 'Maroco', age: 1, skills: ['run'], gender: 'female', married: false }
+    },
+    {
+        childName: { firstname: 'Lucien', lastname: 'Marca', age: 1, skills: ['run'], gender: 'male', married: false }
     },
 ]
 
@@ -46,7 +55,7 @@ export const adults: Array<IAdult> = [
         skills: ['run', 'jump', 'dance'], 
         gender: 'male', 
         married: false, 
-        children: filter(children, (c) => c.childName.lastname === 'Marino' ) 
+        children: addChildren('Marino') 
     },
     { 
         firstname: 'Julie', 
@@ -55,7 +64,7 @@ export const adults: Array<IAdult> = [
         skills: ['run', 'jump', 'swim', 'dance'], 
         gender: 'female', 
         married: true, 
-        children: filter(children, (c) => c.childName.lastname === 'Asteriz' ) 
+        children: addChildren('Asteriz') 
     },
     { 
         firstname: 'Grégoire', 
@@ -64,7 +73,7 @@ export const adults: Array<IAdult> = [
         skills: ['run', 'jump', 'swim', 'dance'], 
         gender: 'male', 
         married: true, 
-        children: filter(children, (c) => c.childName.lastname === 'Farotale' )  
+        children: addChildren('Farotale')  
     },
     { 
         firstname: 'Marthe', 
@@ -73,7 +82,7 @@ export const adults: Array<IAdult> = [
         skills: ['run', 'jump', 'swim', 'dance'], 
         gender: 'female', 
         married: true, 
-        children: filter(children, (c) => c.childName.lastname === 'Lolilo' ) 
+        children: addChildren('Lolilo') 
     },
     { 
         firstname: 'Louis', 
@@ -82,6 +91,42 @@ export const adults: Array<IAdult> = [
         skills: ['run'], 
         gender: 'male', 
         married: true, 
-        children: filter(children, (c) => c.childName.lastname === 'Lolilo' ) 
+        children: addChildren('Lolilo') 
+    },
+    { 
+        firstname: 'Géraldine', 
+        lastname: 'Maroco', 
+        age: 19, 
+        skills: ['run'], 
+        gender: 'female', 
+        married: false, 
+        children: addChildren('Maroco') 
+    },
+    { 
+        firstname: 'Inès', 
+        lastname: 'Marca', 
+        age: 16, 
+        skills: ['swim', 'dance'], 
+        gender: 'female', 
+        married: false, 
+        children: addChildren('Marca') 
+    },
+    { 
+        firstname: 'Julien', 
+        lastname: 'Dirulo', 
+        age: 45, 
+        skills: ['swim', 'dance'], 
+        gender: 'male', 
+        married: false, 
+        children: [] 
+    },
+    { 
+        firstname: 'Louise', 
+        lastname: 'Dirulo', 
+        age: 42, 
+        skills: ['swim', 'run'], 
+        gender: 'female', 
+        married: false, 
+        children: [] 
     },
 ]
