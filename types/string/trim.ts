@@ -11,3 +11,6 @@ console.log(demo1)
 const demo2 = trim(demo1, '0')
 console.log(demo2)
 // demo2 => 41
+
+// trimStart => suppresion début
+// trimEnd => suppresion fin
