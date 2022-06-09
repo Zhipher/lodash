@@ -7,6 +7,8 @@
 import debounce from 'lodash/debounce'
 import axios from 'axios'
 
+// Exemple 1 : 
+
 // This is a real dogs' API, by the way!
 const fetchDogBreeds = () =>
   axios
@@ -14,4 +16,20 @@ const fetchDogBreeds = () =>
     .then((res) => console.log(res.data))
 
 const debouncedFetchDogBreeds = debounce(fetchDogBreeds, 1000) // after one second
-debouncedFetchDogBreeds() // shows data after some time
+// debouncedFetchDogBreeds() // shows data after some time
+
+// Exemple 2 : 
+
+const doSomething = () => {
+  console.log('Je dis quelque chose')
+}
+
+const exec = debounce(doSomething, 3000)
+
+console.log('1')
+exec()
+console.log('2')
+console.log('3')
+exec()
+console.log('4')
+console.log('5')
