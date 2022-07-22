@@ -1,9 +1,13 @@
-import template from 'lodash/template'
-import words from 'lodash/words'
 import head from 'lodash/head'
-import { TemplateExecutor } from 'lodash'
+import { 
+    TemplateExecutor, 
+    template, 
+    words, 
+    times
+} from 'lodash'
 import drop from 'lodash/drop'
-import times from 'lodash/times'
+import findIndex from 'lodash/findIndex'
+import findLastIndex from 'lodash/findLastIndex'
 
 let first: string|undefined = ''
 let data: Array<string|undefined> = []
@@ -15,7 +19,7 @@ const armator = {
     ca: 19023.89
 }
 
-const skeleton = `
+const skeleton: string = `
     <xml version="1.0"?>
     <Armator>
         <Firstname><%= firstname %><Firstname/>
@@ -30,17 +34,25 @@ const compiled: TemplateExecutor = template(skeleton)
 const xml: string = compiled(armator)
 
 const rule: RegExp = /[^,< />\n]+/g
+
 data = words(xml, rule)
 
-// Exécuter 2 fois
 times(2, () => {
-
-    // Récupère le premier élément du tableau
     first = head(data)
-    console.log('Premier élément :', first)
-
-
-    // Supprime le premier élément du tableau
     data = drop(data)
-    console.log('Tableau restant :', data)
 })
+
+const string: string = 'Armator'
+
+const condition = (d: string|undefined) => d===string
+
+// Trouver le premier élément
+const firstIdx: number = findIndex(data, condition)
+
+// Trouver le dernier élément
+const lastIdx: number = findLastIndex(data, condition)
+
+const length: number = data.length
+
+const res = { first: firstIdx, last: lastIdx, size: length}
+console.log(res)
